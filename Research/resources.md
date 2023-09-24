@@ -8,6 +8,7 @@
   * [basic tutorial](https://react.dev/learn/tutorial-tic-tac-toe)
   * [for multiple pages](https://reactrouter.com/en/v6.3.0/getting-started/tutorial)
   * [more compontents](https://github.com/brillout/awesome-react-components)
+* [Figma] (https://www.figma.com/file/ade7fTvCa8fCD39xjacezV/Wireframing-in-Figma?type=design&node-id=0-724&mode=design&t=0lQkgBCVXIpnMamc-0)
   
 ## Backend:
 * General Concepts
