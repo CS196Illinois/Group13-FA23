@@ -3,6 +3,7 @@ import Button from './components/button.js';
 import Card from './components/card.js';
 import Signinbutton from './components/signin';
 import Title from './components/title.js';
+import Background from './components/background.js';
 //import Signinbutton from './components/signin.js';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
      <Card/>
      <Title/>
      <Signinbutton/>
+     <Background/>
     </div>
   );
 }

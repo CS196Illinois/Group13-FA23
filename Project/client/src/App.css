@@ -1,9 +1,23 @@
 body {
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background: linear-gradient(-45deg, #131148, #3d4898, #537ab4, #246b75);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
-	height: 100vh;
+	height: 100vh; 
+    /* background-image:url(./visassets/bg1.jpg); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
 }
+
+@font-face {
+    font-family: conthrax;
+    src: url(./visassets/conthrax-sb.otf);
+  }
+
+/*body {
+    background-color:rgb(215, 233, 225);
+    background-position: top;
+    background-repeat: repeat-x;
+} */
 
 @keyframes gradient {
 	0% {
@@ -19,21 +33,35 @@ body {
 
 .Title {
     position: absolute;
-    left: 18%;
-    top: 20%;
+    left: 40%;
+    top: 15%;
     max-width: 70%;
     font-size: 30px;
-    font-family:'Courier New', Courier, monospace;
+    font-family: conthrax, monospace;
     align-items: center;
 }
 
 .Title h2 {
-    font-size: 25px;
+    position: absolute;
+    left: -26%;
+    top: 50%;
+    font-size: 45px;
+    font-family: conthrax, monospace;
+    align-items: center;
+    width: 500px;
 }
 
-
+.Title h3 {
+    position:absolute;
+    font-family: monospace;
+    width:600px;
+    font-size:25px;
+    top: 140%;
+    left: -61%;
+    text-align: center;
+}
 /* CSS */
-.Signinbutton {
+.realbutton {
   appearance: none;
   background-color: transparent;
   border: 2px solid #1A1A1A;
@@ -60,23 +88,23 @@ body {
   width: 20%;
   max-height: 10%;
   will-change: transform;
-  right:40%;
-  top:50%;
+  right:40.5%;
+  top:61%;
   position:absolute;
 }
 
-.Signinbutton:disabled {
+.realbutton:disabled {
   pointer-events: none;
 }
 
-.Signinbutton:hover {
+.realbutton:hover {
   color: #fff;
   background-color: #1A1A1A;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
 
-.Signinbutton:active {
+.realbutton:active {
   box-shadow: none;
   transform: translateY(0);
 }
