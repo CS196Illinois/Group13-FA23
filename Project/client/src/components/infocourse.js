@@ -6,21 +6,23 @@ function InfoCourse() {
             <p>The information provided will be used to facilitate connections with friends and shared among users! </p>
             <p>Add Course Reference Number (CRN) using the Add CRN button </p>
             <p>Add RSO (Registered Student Organization) using the Add RSO button </p>
-          </div>
+          </div><br /><br />
       
           <div className ="containerStyle">
     
           {/* Subject and Number on the same line */}
           
           <label htmlFor="crn">CRN:</label>
+          <input type="number" id="crn" name="crn" required />
+          {/* <input type="number" id="crn" name="crn" required /><br />
           <input type="number" id="crn" name="crn" required /><br />
-          <input type="number" id="crn" name="crn" required /><br />
+          <input type="number" id="crn" name="crn" required /><br /> */}
 
     
           </div>
     
           <div className = "containerStyle">
-            <button>Add CRN</button><br />
+            <button>Add CRN</button><br /><br /><br />
           </div>
 
           <div className ="containerStyle">
@@ -37,16 +39,16 @@ function InfoCourse() {
               <option value="Actuarial Science Club">Actuarial Science Club</option>
               <option value="Aerospace Engineering Graduate Student Advisory Committee">Aerospace Engineering Graduate Student Advisory Committee</option>
               <option value="other">Other</option>
-            </select><br />
+            </select>
           </div>
 
           <div className = "containerStyle">
-            <button>Add CRN</button><br />
-          </div>
+            <button>Add RSO</button><br /><br /><br />
+          </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
           <div className = "containerStyle">
-            <button>submit your information</button>
-          </div>
+            <button>submit your information</button><br /><br /><br />
+          </div><br />
 
         </div>
       );

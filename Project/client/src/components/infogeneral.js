@@ -7,8 +7,9 @@ function InfoGeneral() {
         </div>
     
         <div className ="containerStyle">
+          <br />
           <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" required /><br />
+          <input type="text" id="name" name="name" required /><br /><br />
   
           <label htmlFor="gender">Pronouns:</label>
           <select id="gender" name="gender">
@@ -18,7 +19,7 @@ function InfoGeneral() {
             <option value="Ze/Hir/Hirs">Ze/Hir/Hirs</option>
             <option value="Xe/Xem/Xyrs">Xe/Xem/Xyrs</option>
             <option value="Other (please specify)s">Other</option>
-          </select><br />
+          </select><br /><br />
   
           <label htmlFor="year">Year:</label>
           <select id="year" name="year">
@@ -29,13 +30,21 @@ function InfoGeneral() {
             <option value="master">Master's</option>
             <option value="PhD">PhD</option>
             <option value="other">Other</option>
-          </select><br />
+          </select><br /><br />
   
           <label htmlFor="major">Major:</label>
-          <input type="text" id="major" name="major" required /><br />
+          <input type="text" id="major" name="major" required />
+
+          <div className = "containerStyle">
+            <button>Add Major</button><br /><br />
+          </div>
   
           <label htmlFor="minor">Minor:</label>
-          <input type="text" id="minor" name="minor" required /><br />
+          <input type="text" id="minor" name="minor" required />
+
+          <div className = "containerStyle">
+            <button>Add Minor</button><br /><br />
+          </div>
   
           <label htmlFor="residence">Residence:</label>
           <input type="text" id="residence" name="residence" /><br />  
@@ -43,7 +52,7 @@ function InfoGeneral() {
         </div>
   
         <div className = "containerStyle">
-          <button>next</button>
+          <button>next</button><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
       </div>
     );
