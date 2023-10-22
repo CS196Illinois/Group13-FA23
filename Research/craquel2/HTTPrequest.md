@@ -5,7 +5,7 @@ React GET
 ```js
 fetch('$API_ADDRESS')
     .then(response => response.json())
-    .then(data => this.setStaete({ postId: data.id }));
+    .then(data => this.setState({ postId: data.id })); // Can be anything, this is where you process the data
 ```
 
 React POST
