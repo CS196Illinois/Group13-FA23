@@ -1,5 +1,5 @@
 body {
-	background: linear-gradient(-45deg, #1c1c40, #364089, #2f5691, #197480);
+	background: linear-gradient(-45deg, #a53516, #d15239, #f58945, #cf3a20);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 	height: 100vh; 
@@ -12,12 +12,6 @@ body {
     font-family: conthrax;
     src: url(./visassets/conthrax-sb.otf);
   }
-
-/*body {
-    background-color:rgb(215, 233, 225);
-    background-position: top;
-    background-repeat: repeat-x;
-} */
 
 @keyframes gradient {
 	0% {
@@ -39,6 +33,7 @@ body {
     font-size: 30px;
     font-family: conthrax, monospace;
     align-items: center;
+    color: white;
 }
 
 .Title h2 {
@@ -64,10 +59,10 @@ body {
 .realbutton {
   appearance: none;
   background-color: transparent;
-  border: 2px solid #e8865c;
+  border: 2px solid white;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #e8865c;
+  color: #ffffff;
   cursor: pointer;
   display: inline-block;
   font-family: conthrax;
@@ -98,8 +93,8 @@ body {
 }
 
 .realbutton:hover {
-  color: #e8865c;
-  background-color: #251919;
+  color: #ffffff;
+  background-color: #201376;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
@@ -112,12 +107,12 @@ body {
 .Profilepic {
     width: 170px;
     height: 160px;
-    background-color: #000000;
+    background-color: #251c52;
     margin: 20px;
     border-radius: 15px;
-    opacity:0.7;
+    /*opacity:0.7;*/
     border-width: 3px;
-    border-color: rgb(180, 92, 34);
+    border-color: rgb(255, 255, 255);
     border-style: double;
 }
 
@@ -143,11 +138,11 @@ body {
 .pic {
     width: 100px; /* Set the width and height to create a circle */
     height: 100px;
-    background-color: #1e1e1f;
+    background-color: #535060;
     border-radius: 50%;
     margin:55px;
     border-width: 3px;
-    border-color: rgb(180, 92, 34);
+    border-color: rgb(255, 255, 255);
     border-style: double;
 }
 
@@ -156,7 +151,16 @@ body {
     top:50px;
     left:3px;
     font-size: 20px;
-    color:rgb(180, 92, 34);
+    color:rgb(255, 255, 255);
     font-family:conthrax;
     text-align: center;
+}
+
+.Oops {
+    position: absolute;
+    top:650px;
+    right:38%;
+    font-family: conthrax;
+    color: white;
+    font-size: 45px;
 }
