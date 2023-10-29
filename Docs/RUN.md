@@ -14,3 +14,5 @@
 * `cd api`
 * `npm install` -> only when you pull from repo
 * `npm start`
+* if you want to run with debugging:
+* `npm run debug`
