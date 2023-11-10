@@ -4,8 +4,11 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "tsc && node --unhandled-rejections=strict ./dist/app.js",
+    "start": "nodemon dist/app.js",
     "debug": "export DEBUG=* && npm run start",
+    "build": "rimraf dist && tsc",
+    "ts.check": "tsc --project tsconfig.json",
+    "add-build": "git add dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,6 +19,8 @@
     "debug": "^4.3.4",
     "express": "^4.18.2",
     "express-winston": "^4.2.0",
+    "pre-commit": "^1.2.2",
+    "rimraf": "^5.0.5",
     "winston": "^3.11.0"
   },
   "devDependencies": {
@@ -25,5 +30,10 @@
     "eslint": "^8.51.0",
     "source-map-support": "^0.5.21",
     "typescript": "^5.2.2"
-  }
+  },
+  "pre-commit": [
+    "ts.check",
+    "build",
+    "add-build"
+  ]
 }
