@@ -42,7 +42,7 @@ fetch('$API_ADDRESS', requestParameters)
 ## Examples of HTTP requests pertaining to our project:
 Some of these can just be done through URL alone.
 1. Making a new student: `/`
-    Example:
+    - Example:
     ```js
     const requestParameters = {
         method: 'POST',
@@ -63,7 +63,7 @@ Some of these can just be done through URL alone.
 2. Querying for students:
     - `/students/?major=CS&gender=M`
     - `/students/?year=2027&location=ISR`
-    Example:
+    - Example:
     ```js
     fetch('$API_ADDRESS/students/?major=CS',{ method: 'GET' })
         .then(reponse => response.json())
@@ -71,7 +71,7 @@ Some of these can just be done through URL alone.
     ```
 
 3. Updating data for a student:
-    Example:
+    - Example:
     ```js
     const patchParameters = {
         method: 'PATCH',
@@ -85,7 +85,7 @@ Some of these can just be done through URL alone.
     ```
 
 4. Deleting a student:
-    Example:
+    - Example:
     ```js
     const requestParameters = {
         method: 'DELETE',
@@ -101,7 +101,7 @@ Some of these can just be done through URL alone.
     - `/explorer/subjects` - Returns list of all the subjects 
     - `/explorer/$SUBJECT/$COURSE_NUMBER` - Returns peripheral data about the course
     - `/explorer/CS/124` - Returns peripheral data about CS-124
-    Example:
+    - Example:
     ```js
     fetch('$API_ADDRESS/explorer/subjects',{ method: 'GET' })
         .then(reponse => response.json())
@@ -110,7 +110,7 @@ Some of these can just be done through URL alone.
 
 6. Getting a specific class from CRN:
     - `/course/$CRN` - Returns peripheral data about the course (Matches CRN -> Course)
-    Example:
+    - Example:
     ```js
     fetch('$API_ADDRESS/course/$CRN',{ method: 'GET' })
         .then(reponse => response.json())
