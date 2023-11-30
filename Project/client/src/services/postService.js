@@ -3,23 +3,23 @@ import React, { useState, useEffect } from 'react';
 const App = () => {
    const [title, setTitle] = useState('');
    const [body, setBody] = useState('');
-   const [posts, setPosts] = useState([]);
+   const [users, setUsers] = useState([]);
 
    // GET with fetch API
    useEffect(() => {
-      const fetchPost = async () => {
+      const fetchUser = async () => {
          const response = await fetch(
             'https://group13api.vercel.app/'
          );
          const data = await response.json();
          console.log(data);
-         setPosts(data);
+         setUsers(data);
       };
-      fetchPost();
+      fetchUser();
    }, []);
 
    // Delete with fetchAPI
-   const deletePost = async (id) => {
+   const deleteUser = async (id) => {
       let response = await fetch(
          `https://group13api.vercel.app/${id}`,
          {
@@ -27,9 +27,9 @@ const App = () => {
          }
       );
       if (response.status === 200) {
-         setPosts(
-            posts.filter((post) => {
-               return post.id !== id;
+         setUsers(
+            users.filter((user) => {
+               return user.id !== id;
             })
          );
       } else {
@@ -38,36 +38,40 @@ const App = () => {
    };
 
    // Post with fetchAPI
-   const addPosts = async (title, body) => {
-      let response = await fetch('https://group13api.vercel.app/posts', {
+   const addUsers = async (name, netid, major, minor, year, pronouns, location) => {
+      let response = await fetch('https://group13api.vercel.app/students', {
          method: 'POST',
          body: JSON.stringify({
-            title: title,
-            body: body,
-            userId: Math.random().toString(36).slice(2),
+            "name": name,
+            "netid": netid,
+            "major": major,
+            "minor": minor,
+            "year": year,
+            "pronouns": pronouns,
+            "location": location
          }),
          headers: {
             'Content-type': 'application/json; charset=UTF-8',
          },
       });
       let data = await response.json();
-      setPosts((posts) => [data, ...posts]);
+      setUsers((users) => [data, ...users]);
       setTitle('');
       setBody('');
    };
 
    const handleSubmit = (e) => {
       e.preventDefault();
-      addPosts(title, body);
+      addUsers(name, netid, major, minor, year, pronouns, location);
    };
 
    return (
-      <div className="posts-container">
-      {posts.map((post) => {
+      <div className="users-container">
+      {users.map((user) => {
          return (
-            <div className="post-card" key={post.id}>
-               <h2 className="post-title">{post.title}</h2>
-               <p className="post-body">{post.body}</p>
+            <div className="post-card" key={user.id}>
+               <h2 className="post-title">{user.name}</h2>
+               <p className="post-body">{user.netid}</p>
                <div className="button">
                <div className="delete-btn">Delete</div>
                </div>
