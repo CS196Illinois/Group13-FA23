@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path="/" component={<Homepg />} />
+          <Route path="/" element={<Homepg />} />
           <Route path="/profile" component={<Profilepg />} />
           <Route path ="/info" component={<Infopg />} />
         </Routes>
