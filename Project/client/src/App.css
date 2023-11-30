@@ -163,4 +163,118 @@ body {
     font-family: conthrax;
     color: white;
     font-size: 45px;
+}body {
+  background: linear-gradient(-45deg, #a53516, #d15239, #f58945, #cf3a20);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh; 
+  /* background-image:url(./visassets/bg1.jpg); /
+  / background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.Title {
+  font-size: 30px;
+  font-family: conthrax, monospace;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: white;
+}
+
+.Title p {
+  font-size: 15px;
+  font-family: conthrax, monospace;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  color: white;
+}
+/* CSS */
+.realbutton {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 20%;
+  max-height: 10%;
+  will-change: transform;
+  right:40.5%;
+  top:61%;
+  position:absolute;
+}
+
+.realbutton:disabled {
+  pointer-events: none;
+}
+
+.realbutton:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.realbutton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.containerStyle {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'conthrax';
+  color: white;
+}
+
+.inputGroupStyle {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.labelStyle {
+  margin-left: 10px; /* Add space between label and input */
+}
+
+@font-face {
+  font-family: conthrax;
+  src: url(./visassets/conthrax-sb/conthrax-sb.otf);
 }

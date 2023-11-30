@@ -6,16 +6,10 @@ import Homepg from './pages/homepg';
 //import Signinbutton from './components/signin.js';
 
 function App() {
+
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" component={<Menu />} />
-          <Route path="/home" component={<Homepg />} />
-          <Route path="/profile" component={<Profilepg />} />
-        </Routes>
-    </Router>    
-
+     hello world
     </div>
   );
 }
