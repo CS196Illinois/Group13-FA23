@@ -22,6 +22,9 @@ function App() {
   );
 }
 
+export default App;
+
+/* 
 import Styles from "./App.module.css";
  
 export default function App() {
@@ -36,4 +39,3 @@ export default function App() {
   );
 }
  */
-export default App;
