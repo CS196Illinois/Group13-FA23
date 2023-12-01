@@ -1,9 +1,13 @@
 function Title() {
     return (
+        
       <div className="Title">
-       <h1>UIUC friend finders</h1>
-       <h2>description of site - looking to find community at UIUC? Log in here</h2>
+       <h1>U I U C</h1>
+       <h2>friend      finders</h2>
+       <h3>Log in to find communities of people similar to you!</h3>
       </div>
+
+      
     );
   }
 
