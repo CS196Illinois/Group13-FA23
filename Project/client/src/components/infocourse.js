@@ -1,7 +1,7 @@
 function InfoCourse() {
       return (
         <div>
-          <div className = "Title">
+          <div className = "Titleinfo">
             <h1>Build Your Profile 2/2</h1>
             <p>The information provided will be used to facilitate connections with friends and shared among users! </p>
             <p>Add Course Reference Number (CRN) using the Add CRN button </p>
@@ -44,7 +44,7 @@ function InfoCourse() {
 
           <div className = "containerStyle">
             <button>Add RSO</button><br /><br /><br />
-          </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          </div><br /><br /><br /><br /><br /><br /><br />
 
           <div className = "containerStyle">
             <button>submit your information</button><br /><br /><br />

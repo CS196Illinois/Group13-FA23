@@ -5,7 +5,6 @@ function Menu() {
         
       <div className="Menu">
        <nav>
-        hello world
         <Link to="/">Home</Link>
         <Link to="/profile">Profile</Link>
         <Link to="/info">Friends</Link>

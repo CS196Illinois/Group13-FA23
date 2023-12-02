@@ -1,4 +1,5 @@
 import '../App.css';
+import Menu from '../components/menu.js';
 
 const Secondpage = () => {
     return (
@@ -25,7 +26,9 @@ const Secondpage = () => {
         </p>
         </div>
       </div> */
+      
       <div style={Styles.divStyles}>
+            <Menu/>
         <div style={Styles.div2Styles}>
       <p>
          GroupChat

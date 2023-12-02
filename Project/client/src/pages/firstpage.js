@@ -1,4 +1,6 @@
 import '../App.css';
+import Menu from '../components/menu.js';
+
 
 const Styles = {
     divStyles: {
@@ -20,7 +22,12 @@ const Styles = {
   };
   function Firstpage() {
     return (
+
       <div style={Styles.divStyles}>
+        <div className='Menu'>
+        <Menu/>
+        </div>
+        
         <p style={Styles.pStyles}>
          MAJORS
         </p>

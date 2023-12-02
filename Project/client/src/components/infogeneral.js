@@ -1,7 +1,11 @@
+import Menu from '../components/menu.js';
+
 function InfoGeneral() {
+
     return (
       <div>
-        <div className = "Title">
+          <Menu/>
+        <div className = "Titleinfo">
           <h1>Build Your Profile 1/2</h1>
           <p>The information provided will be used to facilitate connections with friends and shared among users! </p>
         </div>

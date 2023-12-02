@@ -1,4 +1,7 @@
+import Menu from '../components/menu.js';
+
 function Inforso() {
+  <Menu/>
     return (
       <div>
         <div className = "Title">
