@@ -1,9 +1,13 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Menu from './components/menu.js';
 import Profilepg from './pages/profilepg';
 import Homepg from './pages/homepg';
 import Infopg from './pages/info';
+import Firstpage from './pages/firstpage.js'
+import Secondpage from './pages/secondpage.js'
+import InfoGeneral from './components/infogeneral.js';
+import InfoCourse from './components/infocourse.js';
+
 //import Signinbutton from './components/signin.js';
 
 function App() {
@@ -13,8 +17,12 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Homepg />} />
-          <Route path="/profile" component={<Profilepg />} />
-          <Route path ="/info" component={<Infopg />} />
+          <Route path="/profile" element={<Profilepg />} />
+          <Route path ="/info" element={<Infopg />} />
+          <Route path="/categories" element={<Firstpage />} />
+          <Route path="/chat" element={<Secondpage />} />
+          <Route path="/signup" element={< InfoGeneral />} />
+          <Route path="/signup2" element={< InfoCourse />} />
         </Routes>
     </Router>    
 
