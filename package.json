@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "react-block": "^0.0.6"
+    "react-block": "^0.0.6",
+    "react-router-dom": "^6.18.0"
   }
 }
