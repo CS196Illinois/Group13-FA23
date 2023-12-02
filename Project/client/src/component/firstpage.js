@@ -18,6 +18,18 @@ const Styles = {
       margin: "50px",
       //width: "400px",
     },
+    ppStyles: {
+      color: "white",
+      backgroundColor: "#13294B",
+      fontSize: "20px",
+      fontFamily: "conthrax",
+      fontWeight: "bold",
+      textAlign: "center",
+      padding: "50px",
+      margin: "50px",
+      //width: "400px",
+      //hight: "50px",
+    },
     p3Styles: {
       color: "white",
       backgroundColor: "#13294B",
@@ -44,9 +56,10 @@ const Styles = {
         <p style={Styles.titleStyles}>
          General Categories
         </p>
-        {<p style={Styles.pStyles}>MAJORS </p> }
-        {/* <button className="backbutton">Back</button>  */}
-
+        {/* {<div style={Styles.ppStyles}>MAJORS<button className="majorbutton">MAJORS</button> 
+        </div> } */}
+          
+          <p style={Styles.pStyles}>MAJORS </p>
     
         <p style={Styles.pStyles}>ACADEMIC YEAR </p>
         
