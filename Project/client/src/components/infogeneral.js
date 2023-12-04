@@ -1,4 +1,5 @@
 import Menu from '../components/menu.js';
+import InfoCourse from './infocourse.js';
 
 function InfoGeneral() {
 
@@ -56,7 +57,7 @@ function InfoGeneral() {
         </div>
   
         <div className = "containerStyle">
-          <button>next</button><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <button onClick={InfoCourse}>next</button><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         </div>
       </div>
     );
