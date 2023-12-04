@@ -1,34 +1,24 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.StudentsRoutes = void 0;
+exports.CoursesRoutes = void 0;
 const common_routes_config_1 = require("../common/common.routes.config");
-class StudentsRoutes extends common_routes_config_1.CommonRoutesConfig {
+const courses_controller_1 = __importDefault(require("./courses.controller"));
+class CoursesRoutes extends common_routes_config_1.CommonRoutesConfig {
     constructor(app) {
         super(app, 'CoursesRoutes');
     }
     configureRoutes() {
         this.app
-            .route(`/courses/:subjectCode/:courseNumber`);
-        //.get(CoursesController.get23)
-        //.post(
-        // StudentsMiddleware.validateRequiredStudentBodyFields,
-        // StudentsMiddleware.validateNoDuplicateNetId,
-        // StudentsController.crea;windowteStudent
-        //);
-        /*
-        this.app
-          .route(`/students/:netid`)
-          .all(StudentsMiddleware.validateStudentExists)
-          .get(StudentsController.getStudent)
-          .delete(StudentsController.deleteStudent);
-    
-        this.app.patch(`/students/:netid`, [
-          StudentsMiddleware.validateStudentExists,
-          StudentsController.patchStudent
-        ]);
-        */
+            .route(`/courses/:subject/:number`)
+            .get(courses_controller_1.default.getCourse);
+        //this.app
+        //  .route(`/courses/:crn`)
+        //  .get(CoursesController.getCourse);
         return this.app;
     }
 }
-exports.StudentsRoutes = StudentsRoutes;
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY291cnNlcy5yb3V0ZXMuY29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vY291cnNlcy9jb3Vyc2VzLnJvdXRlcy5jb25maWcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7O0FBQUEseUVBQWtFO0FBR2xFLE1BQWEsY0FBZSxTQUFRLHlDQUFrQjtJQUNwRCxZQUFZLEdBQXdCO1FBQ2xDLEtBQUssQ0FBQyxHQUFHLEVBQUUsZUFBZSxDQUFDLENBQUE7SUFDN0IsQ0FBQztJQUVELGVBQWU7UUFDYixJQUFJLENBQUMsR0FBRzthQUNMLEtBQUssQ0FBQyxxQ0FBcUMsQ0FBQyxDQUFBO1FBQzdDLCtCQUErQjtRQUMvQixRQUFRO1FBQ04sd0RBQXdEO1FBQ3hELCtDQUErQztRQUMvQywwQ0FBMEM7UUFDNUMsSUFBSTtRQUVOOzs7Ozs7Ozs7OztVQVdFO1FBRUYsT0FBTyxJQUFJLENBQUMsR0FBRyxDQUFDO0lBQ2xCLENBQUM7Q0FDRjtBQTlCRCx3Q0E4QkMifQ==
+exports.CoursesRoutes = CoursesRoutes;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiY291cnNlcy5yb3V0ZXMuY29uZmlnLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vY291cnNlcy9jb3Vyc2VzLnJvdXRlcy5jb25maWcudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUEseUVBQWtFO0FBQ2xFLDhFQUFxRDtBQUdyRCxNQUFhLGFBQWMsU0FBUSx5Q0FBa0I7SUFDbkQsWUFBWSxHQUF3QjtRQUNsQyxLQUFLLENBQUMsR0FBRyxFQUFFLGVBQWUsQ0FBQyxDQUFDO0lBQzlCLENBQUM7SUFFRCxlQUFlO1FBQ2IsSUFBSSxDQUFDLEdBQUc7YUFDTCxLQUFLLENBQUMsMkJBQTJCLENBQUM7YUFDbEMsR0FBRyxDQUFDLDRCQUFpQixDQUFDLFNBQVMsQ0FBQyxDQUFDO1FBRXBDLFVBQVU7UUFDViwyQkFBMkI7UUFDM0Isc0NBQXNDO1FBRXRDLE9BQU8sSUFBSSxDQUFDLEdBQUcsQ0FBQztJQUNsQixDQUFDO0NBQ0Y7QUFoQkQsc0NBZ0JDIn0=

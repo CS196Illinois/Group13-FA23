@@ -8,6 +8,7 @@ import debug from 'debug';
 
 import {CommonRoutesConfig} from './common/common.routes.config'
 import {StudentsRoutes} from './students/students.routes.config'
+import {CoursesRoutes} from './courses/courses.routes.config'
 
 const app: express.Application = express();
 const server: http.Server = http.createServer(app);
@@ -35,6 +36,7 @@ if (!process.env.DEBUG) {
 app.use(expressWinston.logger(loggerOptions)) // Makes application use our logger
 
 routes.push(new StudentsRoutes(app)) // Adds routes
+routes.push(new CoursesRoutes(app))
 
 // ------
 
