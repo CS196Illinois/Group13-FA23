@@ -24,7 +24,8 @@ export class StudentsRoutes extends CommonRoutesConfig {
       .get(StudentsController.getStudent)
       .delete(StudentsController.deleteStudent);
 
-    this.app.patch(`/students/:netid`, [
+    this.app
+      .patch(`/students/:netid`, [
       StudentsMiddleware.validateStudentExists,
       StudentsController.patchStudent
     ]);
